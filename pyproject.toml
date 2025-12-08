@@ -1,0 +1,29 @@
+[project]
+name = "newproject"  # CHANGE HERE AND BELOW (project.scripts) IF RENAMING THE PROJECT
+version = "0.1.0"
+description = "This is a temporary description for a new project."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [ { name = "Maarten Bosten", email = "m.n.m.l.bosten@tilburguniversity.edu" } ]
+
+# Runtime dependencies
+dependencies = [
+    "numpy>=1.26",
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+# Allows cli commands to be run as: uv run fast [cli function] [parameters]
+[project.scripts]
+fast = "newproject.cli:app"
+
+
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+
+[tool.uv]
+# Not packaging/building: treat as non-installable project
+package = true
