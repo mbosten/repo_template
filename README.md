@@ -1,7 +1,7 @@
 # Project Name
 
 
-A repository to benchmark Alpha simplicial complex and persistence landscape computation as a function of data size and homology dimensions. The underlying goal is to find out how fast these things can be computed with good hardware.
+A template repository which can be used as a starting point for scientific analyses.
 
 
 ## Quickstart (Windows/macOS/Linux)
@@ -20,9 +20,11 @@ First create a repository in the Github web interface without readme, licence an
  
 
 ```bash
-git remote add origin git@github.com/mbosten/repo_template.git
+git init
+git remote add origin git@github.com/[username]/repo_template.git
+git add .
+git commit -m "Initial commit"
 git push -u origin main
 ```
-
 
 
