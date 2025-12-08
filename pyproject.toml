@@ -14,9 +14,9 @@ dependencies = [
     "rich>=13.0",
 ]
 
-# Allows cli commands to be run as: uv run fast [cli function] [parameters]
+# Allows cli commands to be run as: uv run np [cli function] [parameters]
 [project.scripts]
-fast = "newproject.cli:app"
+np = "newproject.cli:app"
 
 
 [build-system]
