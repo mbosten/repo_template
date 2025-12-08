@@ -11,12 +11,9 @@ A template repository which can be used as a starting point for scientific analy
 # 1) Create local env and install deps
 uv venv --seed --python 3.12
 uv sync --all-extras --group dev
-
-
-
 ```
 
-First create a repository in the Github web interface without readme, licence and gitignore. 
+First create a repository in the Github web interface without readme, licence and gitignore. Then, run the following lines in the project root folder locally. 
  
 
 ```bash
