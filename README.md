@@ -35,6 +35,32 @@ Subsequent logging is as easy as `logger.info("This prints to console and debug.
 ### 2. Your Own Repository Tree
 The file `src/newproject/readme_tree.py` creates a directory tree of your project based on the folder exclusions and file extension inclusions that are set in the script itself.
 simply run `uv run src/newproject/readme_tree.py` from the project root and copy the output to your own `README.md` file.
+```bash
+        .-'- -.  
+       (  ó    ) 
+      (  ,    ó )
+       ( './  .' 
+        '-| |-'  
+          | |
+          |.|
+PROJECT_TEMPLATE_GITHUB
+-----------------------
+├── data
+│   ├── interim
+│   ├── processed
+│   └── raw
+├── logs
+├── src
+│   └── newproject
+│       ├── io
+│       │   └── storage.py
+│       ├── pipeline
+│       ├── __init__.py
+│       ├── cli.py
+│       ├── logging_config.py
+│       └── readme_tree.py
+└── README.md
+```
 
 ### 3. Command Line Integration
 To simplify running the project this code base contains CLI functionality in `src/newproject/cli.py`. In this file we set up the logger and specify command line functions using the Typer module. Moreover, `pyproject.toml` builds this code base as a libary such that you can set your own CLI functions. Currently the `uv run np run-pipeline` is set to run `uv run src/newproject/cli.py:app run-pipeline`. The integration also circumvents having to set the Python executable directory manually from the CLI.
